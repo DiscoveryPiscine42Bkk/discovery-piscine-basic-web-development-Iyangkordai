@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>It's over 9000!</title>
+        <link rel="stylesheet" href="cal.css">
+        <script src="cal.js"></script>
     </head>
     <body>
-        <label for="x">Your first Number</label>
-        <input type="number" id="x">
-        <select name="operator" id="opt">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">x</option>
-        </select>
+        <div id="all">
+            <div id="inputbox">
+                <div id="input">
+                    <label for="x">Your first Number</label>
+                    <input type="number" id="x">
+                    <label for="y">Your second Number</label>
+                    <input type="number" id="y"> 
+                    </div>
+                <div>
+                    <select name="operator" id="opt">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                </div>  
+            </div>
+            <button type="button" onclick="submit() , reset()"> Submit </button>
+        </div>
+        <p id="demo"></p>
     </body>
 </html>

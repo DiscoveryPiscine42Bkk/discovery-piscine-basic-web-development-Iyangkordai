@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(153, 103, 62);
+    background-color: white;
+}
+
+input:focus{
+    border-color: rgb(62, 153, 145);
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+
+}
+
+button {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid rgb(62, 153, 145);
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(62, 153, 145);
+    color: white;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(153, 103, 62);
+    background-color: white;
+}
+select:focus{
+    border-color: rgb(62, 153, 145);
+}
+
+
+#input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#inputbox {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap:20px ;
+}
+
+#all {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
