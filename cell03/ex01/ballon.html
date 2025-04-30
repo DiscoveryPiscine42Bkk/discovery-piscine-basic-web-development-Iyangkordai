@@ -15,11 +15,15 @@
                 cursor: pointer;
                 transition: 80ms;
             }
+            p {
+                color: black;
+            }
         </style>
         <script>
             var count = 0;
             function balloon(){
                 const circle = document.getElementById("cir");
+                var text = document.getElementById("p1");
                 const col = ["red","green","blue"];
                 count ++;
                 let now = circle.clientWidth;
@@ -33,6 +37,7 @@
             }
             function boom(){
                 count ++;
+                var text = document.getElementById("p1");
                 const color = ["blue","green","red"]
                 const circle = document.getElementById("cir");
                 circle.style.backgroundColor = color[count % 3];
@@ -45,6 +50,7 @@
     </head>
     <body>
         <div onclick="balloon()" id="cir" onmouseleave="boom()"></div>
+        <p id="p1"></p>
 
     </body>
 </html>

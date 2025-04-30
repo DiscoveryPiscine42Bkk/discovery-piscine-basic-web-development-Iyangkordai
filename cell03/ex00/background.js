@@ -1,7 +1,7 @@
 function changcolorbg(){
-    let x = Math.floor(Math.random() * 255);
-    let y = Math.floor(Math.random() * 255);
-    let z = Math.floor(Math.random() * 255);
+    let x = Math.floor(Math.random() * 256);
+    let y = Math.floor(Math.random() * 256);
+    let z = Math.floor(Math.random() * 256);
     var color = "rgb("+ x + "," + y + "," + z + ")" ;
     document.body.style.background = color
 
