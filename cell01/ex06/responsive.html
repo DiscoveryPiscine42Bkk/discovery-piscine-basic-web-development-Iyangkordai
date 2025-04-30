@@ -8,45 +8,37 @@
             body {
             background-color: #211951;
             }
-            .box{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                width: 50%;
-                width: 100%;
-                height: 100vh;
-                border-color:#d4d4d4 ;
-                border-collapse: collapse;
-                border-style: solid;
-            }
             .text{
                 font-size: 20px;
                 font-family: monospace;
                 font-weight: bold;
             }
-            .cell{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            
+            table{
+                width: 100%;
+                height: 100vh;
+                border: 10px solid antiquewhite;
+                border-collapse: collapse;
+    
+            }
+            td{
+                border: 10px solid antiquewhite;
             }
             * {
-                margin: 0px;
-                padding: 0px;
+                margin: 0;
+                padding: 0;
             }
+            
         </style>
      
     </head>
     <body>
-        <div class="cell">
-            <div class="box" style="background-color: #836FFF; ">
-                <p1 class="text" style="color: #15F5BA;">First Cell</p1>
-            </div>
-            <div class="box" style="background-color: #15F5BA;">
-                <p1 class="text" style="color: #836FFF;">Second Cell</p1>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <td class="text" style="color: #15F5BA;background-color: #836FFF;">First cell</td>
+                <td class="text" style="color: #836FFF;background-color: #15F5BA;">Second cell</td>
+            </tr>
+
+        </table>
         
     </body>
 </html>

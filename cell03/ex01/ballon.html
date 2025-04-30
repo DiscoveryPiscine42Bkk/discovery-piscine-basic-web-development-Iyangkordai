@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>balloon</title>
+        <style>
+            div {
+                background-color: red;
+                min-width: 200px;
+                min-height: 200px;
+                max-width: 420px;
+                max-height: 420px;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 80ms;
+            }
+        </style>
+        <script>
+            var count = 0;
+            function balloon(){
+                const circle = document.getElementById("cir");
+                const col = ["red","green","blue"];
+                const text1 = document.getElementById("p1");
+                const text2 = document.getElementById("p2");
+                count ++;
+                let now = circle.clientWidth;
+                circle.style.backgroundColor = col[count % 3];
+                circle.style.width = now + 10 + "px";
+                circle.style.height = now + 10 + "px";
+                if (now == 420){
+                    circle.style.width = "200px";
+                    circle.style.height = "200px";
+                }
+            }
+            function boom(){
+                const color = ["blue","green","red"]
+                const circle = document.getElementById("cir");
+                count ++;
+                circle.style.backgroundColor = color[count % 3];
+                const noww = circle.clientWidth;
+                circle.style.width = noww - 5 + "px";
+                circle.style.height = noww - 5 + "px";
+                let text1 = document.getElementById("p1");
+            }
+        </script>
+
+    </head>
+    <body>
+        <div onclick="balloon()" id="cir" onmouseleave="boom()"></div>
+
+    </body>
+</html>
