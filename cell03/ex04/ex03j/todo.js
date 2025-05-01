@@ -2,7 +2,7 @@
 $(document).ready(function () {
   loadTodos();
 
-  $('#newBtn').on('click', function () {
+  $('#newBtn').click(function() {
     let text = prompt("Enter your new TO DO:");
     if (text && $.trim(text) !== "") {
       addTodo($.trim(text), true);
@@ -23,11 +23,9 @@ function addTodo(text, isNew = false) {
     }
   });
 
-  // New TODOs go on top
   if (isNew) {
     $('#ft_list').prepend($todo);
   } else {
-    // When loading from cookie, keep original order
     $('#ft_list').append($todo);
   }
 }
