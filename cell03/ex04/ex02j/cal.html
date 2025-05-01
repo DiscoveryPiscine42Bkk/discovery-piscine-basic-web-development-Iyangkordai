@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>It's over 9000!</title>
         <link rel="stylesheet" href="cal.css">
-        <script src="cal.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <div id="all">
@@ -15,7 +15,7 @@
                     <input type="number" id="x">
                     <label for="y">Your second Number</label>
                     <input type="number" id="y"> 
-                    </div>
+                </div>
                 <div>
                     <select name="operator" id="opt">
                         <option value="+">+</option>
@@ -26,7 +26,8 @@
                     </select>
                 </div>  
             </div>
-            <button type="button" onclick="submit() , reset()"> try me! </button>
+            <script src="cal.js"></script>
+            <button type="button"> try me! </button>
         </div>
     </body>
 </html>

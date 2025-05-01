@@ -1,0 +1,54 @@
+div {
+    cursor: pointer;
+    font-size: 20 px;
+    
+}
+
+html, body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 50px 100px;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+#ft_list {
+    margin: 10px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 40px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+#ft_list:hover{
+    background-color: rgb(250, 225, 176);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    }
+h1 {
+    font-size: 50px;
+}
+#newBtn{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 94, 54);
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    font-size: 25px;
+}
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}

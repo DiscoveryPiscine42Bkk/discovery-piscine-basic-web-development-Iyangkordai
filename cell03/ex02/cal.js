@@ -5,13 +5,8 @@ const y = parseInt(document.getElementById("y").value);
 function myTimer() {
    timer = setInterval(function() {alert("Please, use me...")},30000);
 }
-if (x == null || y == null){
-    myTimer();
-}
-else {
-    clearInterval(timer);
-    myTimer();
-}
+myTimer()
+
 function submit(){
     const x = parseInt(document.getElementById("x").value);
     const y = parseInt(document.getElementById("y").value);
@@ -44,5 +39,6 @@ function submit(){
             break;
     }
     console.log(ans);
-    
+    alert(ans);
+
 }

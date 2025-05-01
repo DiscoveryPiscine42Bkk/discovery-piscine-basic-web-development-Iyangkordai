@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>balloon</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            div {
+                background-color: red;
+                min-width: 200px;
+                min-height: 200px;
+                max-width: 420px;
+                max-height: 420px;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 80ms;
+            }
+            p {
+                color: black;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                var count = 0;
+                $("#cir").click(function(){
+                const circle = document.getElementById("cir");
+                var text = document.getElementById("p1");
+                const col = ["red","green","blue"];
+                count ++;
+                let now = circle.clientWidth;
+                circle.style.backgroundColor = col[count % 3];
+                circle.style.width = now + 10 + "px";
+                circle.style.height = now + 10 + "px";
+                if (now == 420){
+                    circle.style.width = "200px";
+                    circle.style.height = "200px";
+                    }
+                })
+                $("#cir").mouseleave(function(){
+                    count ++;
+                    var text = document.getElementById("p1");
+                    const color = ["blue","green","red"]
+                    const circle = document.getElementById("cir");
+                    circle.style.backgroundColor = color[count % 3];
+                    const noww = circle.clientWidth;
+                    circle.style.width = noww - 5 + "px";
+                    circle.style.height = noww - 5 + "px"; 
+                })
+            })
+            
+        </script>
+
+    </head>
+    <body>
+        <div id="cir"></div>
+        <p id="p1"></p>
+
+    </body>
+</html>
