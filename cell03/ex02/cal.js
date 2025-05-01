@@ -1,9 +1,17 @@
 var ans = 0;
 let timer;
+const x = parseInt(document.getElementById("x").value);
+const y = parseInt(document.getElementById("y").value);
 function myTimer() {
    timer = setInterval(function() {alert("Please, use me...")},30000);
 }
-myTimer();
+if (x == null || y == null){
+    myTimer();
+}
+else {
+    clearInterval(timer);
+    myTimer();
+}
 function submit(){
     const x = parseInt(document.getElementById("x").value);
     const y = parseInt(document.getElementById("y").value);
